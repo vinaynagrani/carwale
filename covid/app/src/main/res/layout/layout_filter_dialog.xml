@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_white_round_corner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/drawable_grey_top_corner"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:text="@string/filter"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/backgroundColor" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_totalCase"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="@string/total_case"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_totalCase"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_totalGreater"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/greater"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/et_totalNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_dark_border"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:hint="Ex1000"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_totalLess"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/less"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_recovered"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="@string/recovered"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_recovered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_recoverGreater"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/greater"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/et_recoverNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_dark_border"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:hint="Ex1000"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_recoverLess"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/less"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_death"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="@string/death"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_death"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_deathGreater"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/greater"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/et_deathNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_dark_border"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:hint="Ex1000"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_deathLess"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/selector_radio_button"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/less"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/backgroundColor" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_grey_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tv_save"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_round_corner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/apply"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

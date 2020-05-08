@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">covid</string>
+    <string name="greater">&gt;&#61;</string>
+    <string name="less"> &lt;&#61;</string>
+    <string name="filter">Filter</string>
+    <string name="total_case">Total Case</string>
+    <string name="death">Deaths</string>
+    <string name="recovered">Recovered</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="country_low">Country - low to high</string>
+    <string name="country_high">Country - high to low</string>
+    <string name="total_low">Total case - low to high</string>
+    <string name="total_high">Total case- high to low</string>
+    <string name="death_low">Death - low to high</string>
+    <string name="death_high">Death - high to low</string>
+    <string name="recover_low">Recover - low to high</string>
+    <string name="recover_high">Recover - high to low</string>
+    <string name="error_total">Please enter number of total </string>
+    <string name="error_death">Please enter number of death</string>
+    <string name="error_recovered">Please enter number of recovered </string>
+    <string name="retry">Retry</string>
+
+
+</resources>

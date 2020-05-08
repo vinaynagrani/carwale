@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ascending"
+        android:orderInCategory="300"
+        android:title="@string/country_low"
+        android:visible="true"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/action_descending"
+        android:orderInCategory="300"
+        android:title="@string/country_high"
+        android:visible="true"
+        app:showAsAction="never"></item>
+
+
+</menu>
